@@ -4,12 +4,17 @@
 }
 
 .app__header {
-
+    position: sticky;
+    top: 0;
+    z-index: 1;
     background-color: white;
     border-bottom: 1px solid lightgray;
-    padding: 20px 20px 12px 20px;
+    padding: 15px 20px 12px 20px;
     margin-bottom: 40px;
-   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .app__headerImage {
@@ -22,3 +27,4 @@
     text-align: center;
 }
 
+.app__posts {}
