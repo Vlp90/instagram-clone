@@ -15,8 +15,11 @@ function App() {
       </div>
 
       <div className="app__postContainer">
-        
+
       </div>
+        <Post />
+        <Post />
+        <Post />
         <Post />
     </div>
   );
