@@ -1,6 +1,6 @@
 import React from "react";
-
 import "./App.css";
+import Post from './Post'
 
 function App() {
   return (
@@ -11,7 +11,13 @@ function App() {
           alt="instagram_logo"
           className="app__headerImage"
         />
+
       </div>
+
+      <div className="app__postContainer">
+        
+      </div>
+        <Post />
     </div>
   );
 }
