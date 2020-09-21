@@ -8,8 +8,8 @@ function Post({ username, caption, imageUrl }) {
       <div className="post__header">
         <Avatar
           className="post__avatar"
-          alt="username"
-          src="https://avatars2.githubusercontent.com/u/60354600?s=460&u=ea72ead94f36abf967b108c3067f75564cf4875b&v=4"
+          alt="Username"
+          src={username}
         />
         <h3>{username}</h3>
       </div>

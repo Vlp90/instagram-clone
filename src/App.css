@@ -4,11 +4,21 @@
 }
 
 .app__header {
-    object-fit: contain;
+
     background-color: white;
     border-bottom: 1px solid lightgray;
     padding: 20px 20px 12px 20px;
     margin-bottom: 40px;
    
+}
+
+.app__headerImage {
+    object-fit: contain;
+}
+
+.app__signup {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 

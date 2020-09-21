@@ -1,8 +1,5 @@
 import firebase from "firebase";
 
-
-
-
 const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyBlUIbXuQV_Up3Psbwnxfp-fux7Z7MzzLg",
     authDomain: "instagram-light-1b746.firebaseapp.com",
