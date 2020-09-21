@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import Post from './Post'
+import Post from "./Post";
 
 function App() {
+  const [posts, setPosts] = useState([
+    {
+      username: "Vlad_lp",
+      caption: "thiscaption",
+      imageUrl:
+        "https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    },
+    {
+      username: "Vlad_TEST2",
+      caption: "thiscaption is working",
+      imageUrl:
+        "https://images.pexels.com/photos/1102915/pexels-photo-1102915.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+    },
+  ]);
+
   return (
     <div className="app">
       <div className="app__header">
@@ -11,16 +26,17 @@ function App() {
           alt="instagram_logo"
           className="app__headerImage"
         />
-
       </div>
 
-      <div className="app__postContainer">
+      <div className="app__postContainer"></div>
 
-      </div>
-        <Post />
-        <Post />
-        <Post />
-        <Post />
+      {posts.map((post) => (
+        <Post
+          username={post.username}
+          caption={post.caption}
+          imageUrl={post.imageUrl}
+        />
+      ))}
     </div>
   );
 }
