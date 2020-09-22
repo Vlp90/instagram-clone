@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "./ImageUpload.css";
 import { db, storage } from "./firebase.js";
 import firebase from "firebase";
+import AddIcon from "@material-ui/icons/Add";
+import SendIcon from "@material-ui/icons/Send";
 
 function ImageUpload({ username }) {
   const [caption, setCaption] = useState("");
@@ -57,15 +59,43 @@ function ImageUpload({ username }) {
 
   return (
     <div className="imageupload">
-    <progress className="imageupload__progress"  value={progress} max='100'/>
-      <input
-        type="text"
-        placeholder="Enter a caption"
-        onChange={(event) => setCaption(event.target.value)}
-        value={caption}
-      />
-      <input type="file" onChange={handleChange} />
-      <Button onClick={handleUpload}>Upload</Button>
+      {/* <div className="imageupload__icon">
+
+<AddIcon />
+</div> */}
+      <div className="imageupload__container">
+        <progress
+          className="imageupload__progress"
+          value={progress}
+          max="100"
+        />
+        <div className="imageupload__captionFile">
+          <input
+            type="text"
+            placeholder="Enter a caption.."
+            onChange={(event) => setCaption(event.target.value)}
+            value={caption}
+          />
+          <div class="button-wrapper">
+            <span class="label">Upload File</span>
+            <input
+              type="file"
+              name="upload"
+              id="upload"
+              class="upload-box"
+              placeholder="Upload File"
+              onChange={handleChange} 
+            />
+          </div>
+          {/* <input type="file" onChange={handleChange} /> */}
+          <div className="imageupload__button">
+
+          <Button onClick={handleUpload}>
+            <SendIcon />
+          </Button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
