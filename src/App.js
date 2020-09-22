@@ -202,7 +202,9 @@ function App() {
           className="app__headerImage"
         />
         {user ? (
+          <div className="app__logoutContainer">
           <Button onClick={() => auth.signOut()}>Logout</Button>
+          </div>
         ) : (
           <div className="app__loginContainer">
             <Button onClick={() => setOpen(true)}>Sign Up</Button>
