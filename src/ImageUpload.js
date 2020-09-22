@@ -5,6 +5,7 @@ import { db, storage } from "./firebase.js";
 import firebase from "firebase";
 import AddIcon from "@material-ui/icons/Add";
 import SendIcon from "@material-ui/icons/Send";
+import AttachmentIcon from '@material-ui/icons/Attachment';
 
 function ImageUpload({ username }) {
   const [caption, setCaption] = useState("");
@@ -64,11 +65,11 @@ function ImageUpload({ username }) {
 <AddIcon />
 </div> */}
       <div className="imageupload__container">
-        <progress
+        {/* <progress
           className="imageupload__progress"
           value={progress}
           max="100"
-        />
+        /> */}
         <div className="imageupload__captionFile">
           <input
             type="text"
@@ -77,7 +78,7 @@ function ImageUpload({ username }) {
             value={caption}
           />
           <div class="button-wrapper">
-            <span class="label">Upload File</span>
+            <span class="label"><AttachmentIcon/></span>
             <input
               type="file"
               name="upload"
