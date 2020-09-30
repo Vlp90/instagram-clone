@@ -3,6 +3,11 @@ import "./Post.css";
 import Avatar from "@material-ui/core/Avatar";
 import { db } from "./firebase";
 import firebase from "firebase";
+import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
+import ShareIcon from "@material-ui/icons/Share";
+import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 
 function Post({ user, postId, username, caption, imageUrl }) {
   const [comments, setComments] = useState([]);
@@ -41,13 +46,28 @@ function Post({ user, postId, username, caption, imageUrl }) {
   return (
     <div className="post">
       <div className="post__header">
-        <Avatar className="post__avatar" alt={username} src={username} />
-        <h3>{username}</h3>
+        <div className="post__headerLeft">
+          <Avatar className="post__avatar" alt={username} src={username} />
+          <h3>{username}</h3>
+        </div>
+
+        <MoreHorizIcon />
       </div>
 
       <img className="post__image" src={imageUrl} alt="" />
       <h4 className="post__text">
+        <div className="post__icons">
+          <div className="post__iconsLeft">
+            <FavoriteBorderIcon />
+            <ChatBubbleOutlineIcon />
+            <ShareIcon />
+          </div>
+          <div className="post__iconsRight">
+            <BookmarkBorderIcon />
+          </div>
+        </div>
         <strong>{username}</strong> {caption}
+        <h3>____</h3>
       </h4>
 
       <div className="post__comments">
