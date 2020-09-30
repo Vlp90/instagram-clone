@@ -31,6 +31,8 @@
 .makeStyles-paper-1 {
     border: none !important;
     outline: none !important;
+    max-width: 400px !important;
+    width: 70% !important;
 }
 
 .app__signup img {
@@ -55,12 +57,14 @@
 
 .app__posts {
     margin-bottom: 80px;
-    
+
 }
 
+
+/* 
 @media (max-width:465px) {
     .makeStyles-paper-1 {
         width: 90% !important;
 
     }
-}
+} */
