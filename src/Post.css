@@ -29,7 +29,7 @@
     align-items: center;
 }
 
-.post__headerLeft > h3 {
+.post__headerLeft>h3 {
     margin-left: 15px;
     font-size: 14px;
 }
@@ -48,7 +48,7 @@
     flex: 0.9;
     border: none;
     padding: 10px;
-    outline: none;
+    outline: 0 !important;
     border-top: 1px solid lightgray !important;
 }
 
@@ -71,11 +71,16 @@
     justify-content: space-between;
 }
 
-.post__iconsLeft > * {
-margin-right: 10px;
+.post__iconsLeft>* {
+    margin-right: 10px;
 }
 
 .post__text h3 {
     /* background-color: red; */
     margin-top: -10px;
+}
+
+.post__comments p,
+.post__text p {
+    font-size: 14px;
 }

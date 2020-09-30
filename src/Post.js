@@ -67,7 +67,7 @@ function Post({ user, postId, username, caption, imageUrl }) {
             <BookmarkBorderIcon />
           </div>
         </div>
-        <strong>{username}</strong> {caption}
+        <p><strong>{username}</strong> {caption}</p>
         <h3>____</h3>
       </h4>
 
