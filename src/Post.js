@@ -8,6 +8,7 @@ import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import ShareIcon from "@material-ui/icons/Share";
 import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
+import SendIcon from '@material-ui/icons/Send';
 
 function Post({ user, postId, username, caption, imageUrl }) {
   const [comments, setComments] = useState([]);
@@ -94,7 +95,7 @@ function Post({ user, postId, username, caption, imageUrl }) {
             type="submit"
             onClick={postComment}
           >
-            Post
+            <SendIcon />
           </button>
         </form>
       )}
