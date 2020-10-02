@@ -28,7 +28,14 @@
 
 }
 
-.makeStyles-paper-1 {
+/* .makeStyles-paper-1 {
+    border: none !important;
+    outline: none !important;
+    max-width: 400px !important;
+    width: 70% !important;
+} */
+
+.jss1, .makeStyles-paper-1 {
     border: none !important;
     outline: none !important;
     max-width: 400px !important;
