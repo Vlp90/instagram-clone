@@ -61,10 +61,10 @@
 }
 
 
-/* 
-@media (max-width:465px) {
-    .makeStyles-paper-1 {
-        width: 90% !important;
+
+@media (max-width:614px) {
+    .app__header{
+        margin-bottom: 0;
 
     }
-} */
+} 

@@ -84,3 +84,17 @@
 .post__text p {
     font-size: 14px;
 }
+
+
+
+@media (max-width:614px) {
+    .post{
+        margin-bottom: 0;
+border: none;
+border-bottom: 1px solid lightgray;
+    }
+
+    .post__input, .post__button  {
+        border-top: none !important;
+    }
+} 
